@@ -6,19 +6,22 @@ import LoginPage from './pages/LoginPage';
 import PostPage from './pages/PostPage';
 import RegisterPage from './pages/RegisterPage';
 import Navbar from './components/Navbar';
+import FlatEarthFacts from './pages/FlatEarthFacts'
 
 
 
-function app() {
-
+function App() {
   return (
     <Router>
       <Navbar />
-      <Route path="/" element={<HomePage />} />
-      <Route path="/" element={<HomePage />} />
-      <Route path="/" element={<HomePage />} />
-      <Route path="/" element={<HomePage />} />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/post/:id" element={<PostPage />} />
+        <Route path="/flatearthfacts" element={<FlatEarthFacts />} />
 
+      </Routes>
     </Router>
-  )
+  );
 }
