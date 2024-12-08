@@ -6,7 +6,7 @@ import LoginPage from './pages/LoginPage';
 import PostPage from './pages/PostPage';
 import RegisterPage from './pages/RegisterPage';
 import Navbar from './components/Navbar';
-import FlatEarthFacts from './pages/FlatEarthFacts'
+import FlatEarthFacts from './pages/FlatEarthFacts';
 
 
 
@@ -25,3 +25,5 @@ function App() {
     </Router>
   );
 }
+
+export default App;
