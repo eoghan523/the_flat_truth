@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import './index.css';
+import './App.css';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import PostPage from './pages/PostPage';
@@ -14,6 +14,8 @@ function App() {
   return (
     <Router>
       <Navbar />
+
+      <div className="bg-blue-500 text-white p-4"> Hello World! tailwind css </div>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
@@ -25,5 +27,7 @@ function App() {
     </Router>
   );
 }
+
+
 
 export default App;
